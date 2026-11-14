@@ -35,8 +35,8 @@ Through this project, I gained hands-on experience with Linux administration, Do
 
 - [Prerequisites & Installation](https://github.com/Lainnie-Torres/TPot-Prereq-Install/blob/main/README.md)
 - [Configuration & Deployment](https://github.com/Lainnie-Torres/T-Pot-ConfigandDeployment/blob/main/README.md)
-- [Monitoring & Attack Analysis](#)
-- [Findings & Lessons Learned](#)
+- [Monitoring & Attack Analysis](https://github.com/Lainnie-Torres/Monitoring-Attack-Analysis/blob/main/README.md)
+- [Findings & Lessons Learned](https://github.com/Lainnie-Torres/Findings-Lessons-Learned/blob/main/README.md)
 
 ## 🔐 ENVIRONMENT NOTES
 
