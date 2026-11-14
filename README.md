@@ -33,7 +33,7 @@ Through this project, I gained hands-on experience with Linux administration, Do
 
 ## 📚 LAB WALKTHROUGH
 
-- [Prerequisites & Installation](#)
+- [Prerequisites & Installation](https://github.com/Lainnie-Torres/TPot-Prereq-Install/blob/main/README.md)
 - [Configuration & Deployment](#)
 - [Monitoring & Attack Analysis](#)
 - [Findings & Lessons Learned](#)
