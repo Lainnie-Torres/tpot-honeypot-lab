@@ -1,7 +1,7 @@
 # T-Pot Honeypot Lab
-<p align="center">
-<img src="https://i.gzn.jp/img/2024/06/22/ssh-honeypot/00.png" width="450" height="300" alt="T-Pot Honeypot">
-</p>
+
+<img src="https://i.gzn.jp/img/2024/06/22/ssh-honeypot/00.png" width="700" height="300" alt="T-Pot Honeypot">
+
 
 ## 🔍 LAB OVERVIEW
 
