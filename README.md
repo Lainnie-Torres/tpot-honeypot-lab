@@ -1,5 +1,3 @@
-# tpot-honeypot-lab
-T-Pot Honeypot Lab 
 # T-Pot Honeypot Lab
 
 ## 🔍 LAB OVERVIEW
