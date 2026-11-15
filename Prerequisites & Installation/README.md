@@ -29,12 +29,12 @@ The T-Pot environment was deployed inside a virtual machine with the following r
 
 
 
-  <img src="screenshots/virtualbox-details.png" width="550" alt="VirtualBox VM configuration"><br>
+  <img src="../screenshots/VirtualBox-Details.png" width="550" alt="VirtualBox VM configuration"><br>
   <sub>VirtualBox virtual machine configuration showing the allocated system resources.</sub>
 
 
 
-  <img src="screenshots/virtualbox-storage.png" width="550" alt="VirtualBox Storage configuration"><br>
+  <img src="../screenshots/NetworkStorage.png" width="550" alt="VirtualBox Storage configuration"><br>
   <sub>VirtualBox storage configuration showing the virtual disk allocation.</sub>
 
 
@@ -66,7 +66,7 @@ The installed T-Pot version was verified from the local Git repository:
 - **Git Description:** `24.04.1-180-g5d95017d`
 
 ### 4. Web Interface Access
-  <img src="screenshots/tpot web.png" width="550" alt="T-Pot Web Interface">
+  <img src="../screenshots/TPot-Web.png" width="550" alt="T-Pot Web Interface">
 
 Configured VirtualBox port forwarding to access the T-Pot web interface from the Windows host.
 
