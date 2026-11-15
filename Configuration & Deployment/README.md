@@ -19,6 +19,7 @@ A port forwarding rule was configured with the following settings:
 | Network Adapter | NAT |
 | Host Port | 8443 |
 | Guest Port | 64297 |
+ <img src="../screenshots/NetworkConfig.png" width="650" height="400" alt="Network Configuration"> 
 
 This configuration allows the host machine to access the T-Pot web interface through the forwarded port.
 
@@ -29,6 +30,8 @@ After configuring port forwarding, the T-Pot web interface was accessed through 
 The local browser address used was:
 
 `https://localhost:8443`
+
+ <img src="../screenshots/TPot-Web.png" width="650" height="400" alt="T-Pot Web Interface">
 
 Successful access to the interface confirmed that the web-based management environment was reachable.
 
@@ -62,16 +65,6 @@ The following checks were performed to verify the deployment:
 - Accessed the T-Pot web interface through the configured port forwarding rule.
 - Navigated to the T-Pot main interface.
 
-## 📸 CONFIGURATION SCREENSHOTS
-
-Screenshots documenting the network configuration and successful access to the T-Pot interface can be included below.
-
-
-<img src="../Prerequisites%20%26%20Installation/screenshots/VM%20Network%20Config.png" width="550" alt="VirtualBox network settings">
-
-<sub>VirtualBox network configuration showing NAT and port forwarding settings.</sub>
-
-<img src="../Prerequisites%20%26%20Installation/screenshots/tpot%20web.png" width="550" alt="T-Pot Web Interface">
 
 <sub>T-Pot web interface showing successful access to the deployed platform.</sub>
 ## 🔐 SECURITY CONSIDERATIONS
