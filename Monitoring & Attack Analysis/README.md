@@ -38,17 +38,17 @@ I explored the available monitoring dashboards and used Kibana Discover to exami
 - Protocol information and alert metadata.
 - How different monitoring components contribute to security visibility.
 
-### 📸 Monitoring Dashboard Screenshots
+### 📸 Monitoring Dashboard Screenshot
+<img src="../screenshots/10.8.26 Alert filter dashboard.png" width="1050" height="950" alt="Alert Filter Dash">
 
-*Insert T-Pot dashboard and Kibana Discover screenshots here.*
 
-## 🔎 ATTACK ANALYSIS
+## ⚔️ ATTACK ANALYSIS
 
 To gain practical experience with security event triage, I examined selected records collected by the T-Pot environment.
 
 The investigation focused on understanding what the available evidence showed, interpreting network metadata, and distinguishing informational activity from events requiring further investigation.
 
-### **Investigation 1: Informational External IP Lookup**
+### **🔎Investigation 1: Informational External IP Lookup**
 
 **Detection:** `ET INFO External IP Address Lookup Domain (ipify .org) in TLS SNI`
 
@@ -92,13 +92,8 @@ The two records occurred at different times and had different TLS fingerprints, 
 
 The available evidence was consistent with a connection to a public IP lookup service. The informational alert did not establish malicious activity, and the records did not identify which application initiated the connection.
 
-### 📸 **Investigation 1 Evidence**
 
-*Insert Suricata api.ipify.org alert screenshot here.*
-
-*Insert related Fatt TLS event screenshot here.*
-
-### **Investigation 2: TCP Stream Anomaly**
+### **🔎Investigation 2: TCP Stream Anomaly**
 
 **Detection:** `SURICATA STREAM FIN recv but no session`
 
@@ -138,9 +133,6 @@ The source address, `[Source IP Redacted]`, was different from the T-Pot host's 
 
 This event represented a TCP stream-tracking anomaly rather than a confirmed attack. The available flow information was insufficient to determine the exact cause of the alert.
 
-### 📸 **Investigation 2 Evidence**
-
-*Insert Suricata FIN recv but no session event screenshot here.*
 
 ## 📌 ADDITIONAL OBSERVATIONS
 
@@ -152,9 +144,6 @@ The October 5 event involved traffic between `[Remote IP Redacted]:443` and `[T-
 
 This alert provided another example of TCP stream-tracking behavior. Although it shared a destination IP with the October 9 FIN alert, the connection details differed. I did not assume that the events represented one continuous connection or a common incident.
 
-### 📸 Additional Event Evidence
-
-*Insert Suricata RST recv but no session screenshot here (optional).*
 
 ## 🧠 INVESTIGATION APPROACH
 
