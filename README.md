@@ -33,7 +33,7 @@ Through this project, I gained hands-on experience with Linux administration, Do
 
 ## 📚 LAB WALKTHROUGH
 
-- [Installation & Configuration](https://github.com/Lainnie-Torres/tpot-honeypot-lab/tree/main/Prerequisites%20%26%20Installation)
+- [Installation & Configuration](https://github.com/Lainnie-Torres/tpot-honeypot-lab/blob/main/Installation&Configuration/README.md)
 - [Monitoring & Attack Analysis](https://github.com/Lainnie-Torres/tpot-honeypot-lab/tree/main/Monitoring%20%26%20Attack%20Analysis)
 - [Findings & Lessons Learned](https://github.com/Lainnie-Torres/tpot-honeypot-lab/tree/main/Findings%20&%20Lessons%20Learned)
 
