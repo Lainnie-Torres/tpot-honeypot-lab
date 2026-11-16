@@ -1,4 +1,4 @@
-# T-Pot Honeypot Lab – Prerequisites & Installation
+# T-Pot Honeypot Lab – Installation & Configuration
 
 ## 🧰 PREREQUISITES
 
@@ -12,9 +12,9 @@ The following hardware and software were used to deploy the lab environment.
 - **Honeypot Platform:** T-Pot Community Edition
 - **Internet Connection:** Required for installation, updates, and deployment
 
-### Virtual Machine Configuration
+## 💻 VIRTUAL MACHINE CONFIGURATION
 
-The T-Pot environment was deployed inside a virtual machine with the following resource allocation:
+Created a virtual machine in Oracle VirtualBox to host the T-Pot environment. The following resources were allocated to support Ubuntu Server and the T-Pot deployment.
 
 | Configuration | Specification |
 |---|---|
@@ -24,57 +24,72 @@ The T-Pot environment was deployed inside a virtual machine with the following r
 | Memory Allocation | 8 GB RAM |
 | Virtual Disk | 128 GB |
 | Network Adapter | NAT |
+
+<img src="../screenshots/VirtualBox-Details.png" width="550" alt="VirtualBox VM configuration">
+
+<sub>VirtualBox virtual machine configuration showing the allocated system resources.</sub>
+
+<img src="../screenshots/NetworkStorage.png" width="550" alt="VirtualBox storage configuration">
+
+<sub>VirtualBox storage configuration showing the virtual disk allocation.</sub>
+
+## 🐧 UBUNTU SERVER & T-POT INSTALLATION
+
+Installed Ubuntu Server as the guest operating system within the VirtualBox environment.
+
+After preparing the Ubuntu environment, deployed **T-Pot Community Edition**, which uses Docker to manage its honeypot services and supporting components.
+
+The installed T-Pot version was verified through the local Git repository.
+
+**Version verification command:**
+
+```bash
+cd ~/tpotce
+git describe --tags
+```
+
+**Output:**
+
+```text
+24.04.1-180-g5d95017d
+```
+
+## 🌐 NETWORK CONFIGURATION
+
+The virtual machine uses **NAT (Network Address Translation)** networking. A port forwarding rule was configured to allow the Windows host machine to access the T-Pot web interface.
+
+| Setting | Configuration |
+|---|---|
+| Network Adapter | NAT |
 | Host Port | 8443 |
 | Guest Port | 64297 |
 
+<img src="../screenshots/NetworkConfig.png" width="650" alt="VirtualBox network configuration">
 
+<sub>VirtualBox NAT port forwarding configuration.</sub>
 
-  <img src="../screenshots/VirtualBox-Details.png" width="550" alt="VirtualBox VM configuration"><br>
-  <sub>VirtualBox virtual machine configuration showing the allocated system resources.</sub>
+## 🖥️ WEB INTERFACE ACCESS
 
+After configuring port forwarding, accessed the T-Pot web interface through a browser on the Windows host machine.
 
+**Local browser address:**
 
-  <img src="../screenshots/NetworkStorage.png" width="550" alt="VirtualBox Storage configuration"><br>
-  <sub>VirtualBox storage configuration showing the virtual disk allocation.</sub>
+`https://localhost:8443`
 
+<img src="../screenshots/TPot-Web.png" width="550" alt="T-Pot web interface">
 
-### Network Configuration
+<sub>T-Pot web interface showing successful access to the deployed platform.</sub>
 
-The virtual machine uses **NAT networking** in VirtualBox. A port forwarding rule was configured to allow access to the T-Pot web interface from the host machine.
+## ✅ DEPLOYMENT VERIFICATION
 
-- **Host Port:** 8443
-- **Guest Port:** 64297
-- **Access Method:** Web browser through the host machine
-
-## ⚙️ INSTALLATION & DEPLOYMENT
-
-### 1. Virtual Machine Preparation
-
-Created a virtual machine in Oracle VirtualBox to host the T-Pot environment. Allocated the necessary CPU, memory, and disk resources to support the Ubuntu Server operating system and T-Pot deployment.
-
-### 2. Ubuntu Server Environment
-
-Installed and configured Ubuntu Server as the guest operating system. The VM was configured with NAT networking and port forwarding to support access to the T-Pot web interface.
-
-### 3. T-Pot Deployment
-
-Deployed **T-Pot Community Edition** within the Ubuntu Server environment. T-Pot uses Docker to manage its honeypot services and supporting components.
-
-The installed T-Pot version was verified from the local Git repository:
-
-- **Release Reference:** `24.04.1`
-- **Git Description:** `24.04.1-180-g5d95017d`
-
-### 4. Web Interface Access
-  <img src="../screenshots/TPot-Web.png" width="550" alt="T-Pot Web Interface">
-
-Configured VirtualBox port forwarding to access the T-Pot web interface from the Windows host.
-
-The web interface was accessed through the browser using the forwarded host port.
-
-## ✅ INSTALLATION VERIFICATION
-
-The following checks were completed during deployment and verification:
+The following checks were completed to verify the deployment:
 
 - Confirmed the Ubuntu Server virtual machine boots and accepts login credentials.
-- Accessed the Ubuntu command-line environment.
+- Accessed the Ubuntu Server command-line environment.
+- Verified the installed T-Pot version through the local Git repository.
+- Successfully accessed the T-Pot web interface through the configured port forwarding rule.
+- Navigated to the T-Pot main interface.
+
+## 🔐 SECURITY CONSIDERATIONS
+
+Sensitive configuration details, including login credentials and private network information, are excluded from this documentation.
