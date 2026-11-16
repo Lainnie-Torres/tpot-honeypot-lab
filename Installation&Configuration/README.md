@@ -39,6 +39,8 @@ Installed Ubuntu Server as the guest operating system within the VirtualBox envi
 
 After preparing the Ubuntu environment, deployed **T-Pot Community Edition**, which uses Docker to manage its honeypot services and supporting components.
 
+<img src="../screenshots/Screenshot 2026-10-05 062512.png" width="750" height="400" alt="TPot Installation">
+
 The installed T-Pot version was verified through the local Git repository.
 
 **Version verification command:**
