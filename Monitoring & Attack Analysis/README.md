@@ -23,7 +23,7 @@ Using the Attack Map, I explored how incoming activity is displayed geographical
 
 ### 📸 Attack Map Screenshot
 
-*Insert Attack Map screenshot here.*
+<img src="../screenshots/Attackmap.png" width="950" height="650" alt="Attack Map">
 
 ## 📊 SECURITY EVENT MONITORING
 
